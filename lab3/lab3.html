@@ -32,6 +32,7 @@
         <dd>Dogs are descendent of the wolf.</dd>
     </dl>
 
+    <h2 id="table">Tables</h2>
     <table border="1">
         <tr>
             <td>column1</td>
@@ -90,6 +91,72 @@
             </tr>
         </tfoot>
     </table>
+
+    <h2 id="imageslink">Images</h2>
+    <hr>
+    <img src="images/nyc.jpg" alt="The sakura in the Central Park of NYC" width="300px" title="Visit Central Park of NYC">
+    <img src="images/nyc.jpg" alt="The sakura in the Central Park of NYC" width="300px" title="Visit Central Park of NYC">
+
+    <figure>
+        <img src="images/nyc.jpg" alt="The sakura in the Central Park of NYC" width="300px" title="Visit Central Park of NYC">
+        <img src="images/nyc.jpg" alt="The sakura in the Central Park of NYC" width="300px" title="Visit Central Park of NYC">
+        <figcaption>The Central Park's sakura peak during March and April -- 2024</figcaption>
+    </figure>
+    <h2 id="links">Links</h2>
+
+    <p>Link to open an external website</p>
+    <p><a href="https://www.qcc.cuny.edu/" target="_blank" rel="noopener noreferrer"> QCC website</a> for more information!</p>
+
+    <p><em>Link to an email address</em></p>
+    <p>Email professor Wu <a href="mailto:hwu@qcc.cuny.edu">by email</a></p>
+    <figure>
+        <a href="https://www.nyc.gov/" target="_blank" rel="noopener noreferrer">
+            <img src="images/nyc.jpg" alt="The sakura in the Central Park of NYC" width="300px" title="Visit Central Park of NYC">
+        </a>
+    </figure>
+    <p>Contact to QCC social media</p>
+        <figure>
+            <a href="https://www.facebook.com/QueensboroughCUNY" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebookIcon.svg" alt="Connect to QCC facebook" title="Keep connect to QCC facebook" width="50px">
+            </a>
+
+            <a href="https://www.tiktok.com/@qcc_cuny" target="_blank" rel="noopener noreferrer">
+                <img src="images/tiktokIcon.svg" alt="Connect to QCC tiktok" title="Keep connect to QCC titok" width="50px">
+            </a>
+        </figure>
+    <br>
+    <p id="places"><em>Link to an internal/local webpage</em></p>
+    <p>
+        <ul>
+            <li><a href="centralpark.html">Central Park</a></li>
+            <li><a href="timesquare.html">Time Square</a></li>
+        </ul>
+    </p>
+
+    <br>
+    <p>
+        <em>Image mapping</em>
+    </p>
+    <figure>
+        <img src="images/nyc.jpg" alt="The sakura in the Central Park of NYC" width="500px" height="400px" title="Visit Central Park of NYC" usemap="#nyc_map">
+        <figcaption>The Central Park's sakura peak during March and April -- 2024</figcaption>
+    </figure>
+    <!-- Define the map-->
+    <map name="nyc_map">
+        <area shape="rect" coords="200,150,300,250" href="centralpark.html" alt="link to Central Park webpage"></area>
+    </map>
+
+    <br>
+    <p><em>Link to a specific section of the same webpage</em></p>
+    <na>
+        <a href="#">Go to the beginning</a>
+        <span>|</span>
+        <a href="#table">Tables</a>
+        <span>|</span>
+        <a href="#links">Links</a>
+        <span>|</span>
+        <a href="#imageslink">Images</a>
+    </na>
 
 </body>
 </html>
