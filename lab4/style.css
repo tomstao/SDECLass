@@ -181,3 +181,62 @@ figure {
 .blur3 {
     filter: blur(10px);
 }
+
+.cardcontainer{
+    width: 800px;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 40%;
+    border-radius: 10px;
+    border: solid 2px lightgray;
+    overflow: hidden;
+    background-color: white;
+
+}
+
+.card2 {
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2%;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.cardtitle {
+    text-align: center;
+    color:crimson;
+}
+
+.linkcard2{
+    background-color: darkblue;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.card2:hover {
+    box-shadow: 0px 0px 3px 1px gray;
+    border: dashed 2px gray;
+}
+
+.card2:hover .linkcard2{
+    background-color: crimson;
+    text-decoration: underline;
+}
+
+.cardinfo{
+    padding: 1rem;
+}
+
+.card:hover .linkcard{
+    color:crimson;
+}
