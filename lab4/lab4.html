@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Lab4, introduction to CSS</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 <h1>Introduction to CSS</h1>
@@ -21,7 +21,7 @@
     appear</p>
 
 <p class="author">By: Tao Su</p>
-<h2 class="author">Typology</h2>
+<h2 class="author" id="typology">Typology</h2>
 <p class="author">Styling text</p>
 <p class="fontweight">Paragraph with font-weigh bold</p>
 <p class="fontstyle">Paragraph with font style</p>
@@ -52,43 +52,43 @@
 <div class="radiusbox4">Box 4</div>
 <div class="radiusbox5">Box 5</div>
 
-<h2>Basic image formatting</h2>
+<h2 id="images">Basic image formatting</h2>
 <figure class="formatting">
-    <img class="dumbo coffeeshop1" src="images/img1.png" alt="coffee shop">
-    <img class="dumbo coffeeshop2" src="images/img1.png" alt="coffee shop">
-    <img class="dumbo coffeeshop3" src="images/img1.png" alt="coffee shop">
-    <img class="dumbo coffeeshop4" src="images/img1.png" alt="coffee shop">
+    <img alt="coffee shop" class="dumbo coffeeshop1" src="images/img1.png">
+    <img alt="coffee shop" class="dumbo coffeeshop2" src="images/img1.png">
+    <img alt="coffee shop" class="dumbo coffeeshop3" src="images/img1.png">
+    <img alt="coffee shop" class="dumbo coffeeshop4" src="images/img1.png">
 </figure>
 
 <h2 class="subtitle">Image filters</h2>
 
 <figure class="filter">
-    <img class="blur1" src="images/img1.png" alt="coffee shop">
+    <img alt="coffee shop" class="blur1" src="images/img1.png">
     <figcaption>Blurred filter with 1px</figcaption>
 
-    <img class="blur2" src="images/img1.png" alt="coffee shop">
+    <img alt="coffee shop" class="blur2" src="images/img1.png">
     <figcaption>Blurred filter with 5px</figcaption>
 
-    <img class="blur3" src="images/img1.png" alt="coffee shop">
+    <img alt="coffee shop" class="blur3" src="images/img1.png">
     <figcaption>Blurred filter with 10px</figcaption>
 
 </figure>
 
 <figure class="filter">
-    <img style="filter: sepia(0%)" class="blur4" src="images/img1.png" alt="coffee shop">
+    <img alt="coffee shop" class="blur4" src="images/img1.png" style="filter: sepia(0%)">
     <figcaption>Sepia filter with 0%</figcaption>
-    <img style="filter: sepia(50%)" class="blur4" src="images/img1.png" alt="coffee shop">
+    <img alt="coffee shop" class="blur4" src="images/img1.png" style="filter: sepia(50%)">
     <figcaption>Sepia filter with 50%</figcaption>
-    <img style="filter: sepia(100%)" class="blur4" src="images/img1.png" alt="coffee shop">
+    <img alt="coffee shop" class="blur4" src="images/img1.png" style="filter: sepia(100%)">
     <figcaption>Sepia filter with 100%</figcaption>
 </figure>
 
 <figure class="filter">
-    <img style="filter: invert(0%)" class="blur4" src="images/img1.png" alt="coffee shop">
+    <img alt="coffee shop" class="blur4" src="images/img1.png" style="filter: invert(0%)">
     <figcaption>Invert filter with 0%</figcaption>
-    <img style="filter: invert(40%)" class="blur4" src="images/img1.png" alt="coffee shop">
+    <img alt="coffee shop" class="blur4" src="images/img1.png" style="filter: invert(40%)">
     <figcaption>Invert filter with 40%</figcaption>
-    <img style="filter: invert(100%)" class="blur4" src="images/img1.png" alt="coffee shop">
+    <img alt="coffee shop" class="blur4" src="images/img1.png" style="filter: invert(100%)">
     <figcaption>Invert filter with 100%</figcaption>
 </figure>
 
@@ -104,44 +104,115 @@
 </main>
 
 
-<h2>Cards</h2>
+<h2 id="cards">Cards</h2>
 <section class="cardcontainer">
     <div class="card">
-        <img class="imgcard" src="images/img1.png" alt="coffee shop">
-        <a class="linkcard" href="https://en.wikipedia.org/wiki/Dumbo,_Brooklyn" target="_blank"
-           rel="noreferrer noopenner">Visit
+        <img alt="coffee shop" class="imgcard" src="images/img1.png">
+        <a class="linkcard" href="https://en.wikipedia.org/wiki/Dumbo,_Brooklyn" rel="noreferrer noopenner"
+           target="_blank">Visit
             Dumbo</a>
     </div>
 
     <div class="card">
-        <img class="imgcard" src="images/img1.png" alt="coffee shop">
-        <a class="linkcard" href="https://en.wikipedia.org/wiki/Dumbo,_Brooklyn" target="_blank"
-           rel="noreferrer noopenner">Visit
+        <img alt="coffee shop" class="imgcard" src="images/img1.png">
+        <a class="linkcard" href="https://en.wikipedia.org/wiki/Dumbo,_Brooklyn" rel="noreferrer noopenner"
+           target="_blank">Visit
             Dumbo</a>
     </div>
 
     <div class="card2">
-        <img class="imgcard" src="images/Metropolitan.jpg" alt="The MET">
+        <img alt="The MET" class="imgcard" src="images/Metropolitan.jpg">
         <h2 class="cardtitle">The Metropolitan Museum of Art</h2>
         <p class="cardinfo">The Met presents over 5,000 years of art from around the world for everyone to experience
             and enjoy.</p>
         <a class="linkcard2" href="https://www.metmuseum.org/">The Metropolitan Museum of Art</a>
     </div>
-<div class="card2">
-        <img class="imgcard" src="images/Metropolitan.jpg" alt="The MET">
+    <div class="card2">
+        <img alt="The MET" class="imgcard" src="images/Metropolitan.jpg">
         <h2 class="cardtitle">The Metropolitan Museum of Art</h2>
         <p class="cardinfo">The Met presents over 5,000 years of art from around the world for everyone to experience
             and enjoy.</p>
         <a class="linkcard2" href="https://www.metmuseum.org/">The Metropolitan Museum of Art</a>
     </div>
-<div class="card2">
-        <img class="imgcard" src="images/Metropolitan.jpg" alt="The MET">
+    <div class="card2">
+        <img alt="The MET" class="imgcard" src="images/Metropolitan.jpg">
         <h2 class="cardtitle">The Metropolitan Museum of Art</h2>
         <p class="cardinfo">The Met presents over 5,000 years of art from around the world for everyone to experience
             and enjoy.</p>
         <a class="linkcard2" href="https://www.metmuseum.org/">The Metropolitan Museum of Art</a>
     </div>
+</section>
 
+<section>
+
+    <h2 class="subtitle">Navigation</h2>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#typology">Typology</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#cards">Cards</a></li>
+    </ul>
+
+    <nav class="navbarhorizontal">
+        <a href="#">Home</a>
+        <a href="#typology">Typology</a>
+        <a href="#images">Images</a>
+        <a href="#cards">Cards</a>
+    </nav>
+
+    <h2 class="subtitle">Colors</h2>
+    <h3>RGB value</h3>
+    <section class="rgbcontainer">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <h3>Hex code</h3>
+    <section class="hexcontainer">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <h2 class="subtitle">Position</h2>
+        <div class="imgcontainer">
+            <img alt="Image of Metropolitan Museum of Art" src="images/Metropolitan.jpg" width="100%">
+            <p class="imgtitle">Metropolitan Museum of Art</p>
+
+        </div>
+
+    <h2 class="subtitle">Background image</h2>
+
+    <section class="imgbackground">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+
+    <p>Linear gradient with 2+hree color</p>
+    <section class="imgbackground2">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <h2>Hero image with linear-gradient</h2>
+    <section class="heroimgcontainer">
+        <div class="herocontent">
+            <h3 class="herocontent_title">The Metropolitan Museum of Art</h3>
+            <p class="hereocontent_intro">The staircase near the entrance</p>
+            <a class="herocontent_link" href="https://www.metmuseum.org/" target="_blank" rel="noreferrer nonopenner">More information of The MET</a>
+        </div>
+    </section>
+
+    <nav class="navbarhorizontal fixedtabs">
+        <a href="#">Home</a>
+        <a href="#typology">Typology</a>
+        <a href="#images">Images</a>
+        <a href="#cards">Cards</a>
+    </nav>
 
 </section>
 </body>
