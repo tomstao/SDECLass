@@ -75,7 +75,7 @@ img {
 }
 
 .cardslide:hover{
-    transform: translateY(-5px) scale(1.1);
+    transform: translateY(-10px) scale(1.1);
     box-shadow: 0px 5px 5px black;
 }
 
