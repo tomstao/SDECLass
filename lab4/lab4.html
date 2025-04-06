@@ -53,7 +53,7 @@
 <div class="radiusbox5">Box 5</div>
 
 <h2>Basic image formatting</h2>
-<figure>
+<figure class="formatting">
     <img class="dumbo coffeeshop1" src="images/img1.png" alt="coffee shop">
     <img class="dumbo coffeeshop2" src="images/img1.png" alt="coffee shop">
     <img class="dumbo coffeeshop3" src="images/img1.png" alt="coffee shop">
@@ -62,7 +62,7 @@
 
 <h2 class="subtitle">Image filters</h2>
 
-<figure>
+<figure class="filter">
     <img class="blur1" src="images/img1.png" alt="coffee shop">
     <figcaption>Blurred filter with 1px</figcaption>
 
@@ -74,7 +74,7 @@
 
 </figure>
 
-<figure>
+<figure class="filter">
     <img style="filter: sepia(0%)" class="blur4" src="images/img1.png" alt="coffee shop">
     <figcaption>Sepia filter with 0%</figcaption>
     <img style="filter: sepia(50%)" class="blur4" src="images/img1.png" alt="coffee shop">
@@ -83,7 +83,7 @@
     <figcaption>Sepia filter with 100%</figcaption>
 </figure>
 
-<figure>
+<figure class="filter">
     <img style="filter: invert(0%)" class="blur4" src="images/img1.png" alt="coffee shop">
     <figcaption>Invert filter with 0%</figcaption>
     <img style="filter: invert(40%)" class="blur4" src="images/img1.png" alt="coffee shop">
@@ -93,23 +93,53 @@
 </figure>
 
 <h2 class="subtitle">Static and liquid layouts</h2>
-<main class="maincontainer"></main>
-<div></div>
-<aside></aside>
+
+<main class="maincontainer">
+    <div class="leftcolumn">
+        <section class="section">Information section</section>
+        <article class="article">Article section</article>
+    </div>
+    <aside class="rightcolumn">Aside for blogs</aside>
+    <section class="images">images container</section>
+</main>
+
 
 <h2>Cards</h2>
-<section calss="cardcontainer">
+<section class="cardcontainer">
     <div class="card">
-        <img src="images/img1.png" alt="coffee shop">
-        <a href="https://en.wikipedia.org/wiki/Dumbo,_Brooklyn" target="_blank" rel="noreferrer noopenner">Visit
+        <img class="imgcard" src="images/img1.png" alt="coffee shop">
+        <a class="linkcard" href="https://en.wikipedia.org/wiki/Dumbo,_Brooklyn" target="_blank"
+           rel="noreferrer noopenner">Visit
+            Dumbo</a>
+    </div>
+
+    <div class="card">
+        <img class="imgcard" src="images/img1.png" alt="coffee shop">
+        <a class="linkcard" href="https://en.wikipedia.org/wiki/Dumbo,_Brooklyn" target="_blank"
+           rel="noreferrer noopenner">Visit
             Dumbo</a>
     </div>
 
     <div class="card2">
-        <img src="images/Metropolitan.jpg" alt="The MET">
+        <img class="imgcard" src="images/Metropolitan.jpg" alt="The MET">
         <h2 class="cardtitle">The Metropolitan Museum of Art</h2>
         <p class="cardinfo">The Met presents over 5,000 years of art from around the world for everyone to experience
             and enjoy.</p>
+        <a class="linkcard2" href="https://www.metmuseum.org/">The Metropolitan Museum of Art</a>
+    </div>
+<div class="card2">
+        <img class="imgcard" src="images/Metropolitan.jpg" alt="The MET">
+        <h2 class="cardtitle">The Metropolitan Museum of Art</h2>
+        <p class="cardinfo">The Met presents over 5,000 years of art from around the world for everyone to experience
+            and enjoy.</p>
+        <a class="linkcard2" href="https://www.metmuseum.org/">The Metropolitan Museum of Art</a>
+    </div>
+<div class="card2">
+        <img class="imgcard" src="images/Metropolitan.jpg" alt="The MET">
+        <h2 class="cardtitle">The Metropolitan Museum of Art</h2>
+        <p class="cardinfo">The Met presents over 5,000 years of art from around the world for everyone to experience
+            and enjoy.</p>
+        <a class="linkcard2" href="https://www.metmuseum.org/">The Metropolitan Museum of Art</a>
     </div>
 
 
