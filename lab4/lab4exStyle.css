@@ -1,14 +1,91 @@
 .container {
-    height: 500px;
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 .img1, .img2, .img3 {
     width: 30%;
-    height: 500px;
     border: 1px solid black;
+    position: relative;
 }
+
+.img1 {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.firstImg {
+    filter: invert(100%);
+}
+
+.content1 h3, .content1 p {
+    margin: 2%;
+    padding: 2%;
+    text-align: justify;
+    display: inline-block;
+}
+
+.content1 h3 {
+    color: rgb(152, 226, 255);
+}
+
+.content1, .content2, .content3 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*.content1 {*/
+/*    color: rgb(242, 239, 231);*/
+/*    background-color: rgba(72, 166, 167, 0.64);*/
+/*    border-radius: 10px;*/
+/*    width: 80%;*/
+/*    border: 2px solid rgb(0, 106, 113);*/
+/*    text-shadow: 2px 2px 5px rgba(0, 106, 113, 0.7), -2px -2px 5px rgba(0, 106, 113, 0.7); !* Apply shadow around the text *!*/
+/*    top: 70%;*/
+/*    left: 50%;*/
+/*}*/
+
+.content1 {
+    position: absolute;
+    bottom: 10px; /* stay inside the image */
+    left: 50%;
+    transform: translateX(-50%); /* only center horizontally */
+    width: 90%;
+    background-color: rgba(72, 166, 167, 0.64);
+    border-radius: 10px;
+    color: rgb(242, 239, 231);
+    border: 2px solid rgb(0, 106, 113);
+    text-shadow: 2px 2px 5px rgba(0, 106, 113, 0.7), -2px -2px 5px rgba(0, 106, 113, 0.7);
+}
+
+.img1:hover {
+    transform: scale(1.1);
+    filter: invert(100%);
+    transition-duration: 1s;
+    border: 2px solid rgb(0, 106, 113);
+    border-radius: 10px;
+}
+
+.content2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(230, 157, 184, 0.73);
+    color: rgb(241, 231, 231);
+    border-radius: 5%;
+    text-shadow: 2px 2px 5px rgb(119, 101, 93);
+}
+
+
 
