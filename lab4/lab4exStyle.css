@@ -11,9 +11,6 @@
     width: 30%;
     border: 1px solid rgb(190, 89, 133);
     position: relative;
-}
-
-.img1 , .img2, .img3 {
     position: relative;
     overflow: hidden;
 }
@@ -109,7 +106,7 @@ img {
     margin-top: 10px;
     padding: 5px 10px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid rgba(255, 254, 206, 0.56);
     background-color: rgba(217, 64, 112, 0.58);
     color: aliceblue;
     display: inline-block;
@@ -134,7 +131,13 @@ a {
     color: rgb(241, 231, 231);
     border-radius: 5%;
     text-shadow: 2px 2px 5px rgb(119, 101, 93);
-    border: 2px solid rgb(255, 254, 206);
+    border: 2px solid rgba(255, 254, 206, 0.56);
+    box-shadow: 4px 4px 5px black;
+    transition: box-shadow 500ms ease-in-out;
+}
+
+.content2:hover {
+    box-shadow: none;
 }
 
 
