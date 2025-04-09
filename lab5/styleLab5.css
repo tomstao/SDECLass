@@ -6,6 +6,52 @@ html {
     scroll-behavior: smooth;
 }
 
+/*.navContainer {*/
+/*    position: fixed;*/
+/*    top: 0%;*/
+/*    background-color: rgba(50, 50, 50, 0.7);*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.navItems {*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.collapseBar {*/
+/*    display: none;*/
+/*    padding: 1em;*/
+/*    color: aliceblue;*/
+/*}*/
+
+.navContainer {
+    position: fixed;
+    top: 0%;
+    background-color: rgba(50, 50, 50, 0.7);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navItems {
+    display: inline-block; /* Initial state explicitly defined */
+}
+
+.navLink {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+.collapseBar {
+    display: none; /* Initial state explicitly defined */
+    padding: 1em;
+    color: aliceblue;
+}
+
+
 .square_circle {
     width: 100px;
     height: 100px;
@@ -167,6 +213,8 @@ img {
     grid-area: footer;
 }
 
+
+
 /* Media query */
 
 @media only screen and (max-width: 1150px) {
@@ -178,8 +226,9 @@ img {
         margin: 2%;
     }
 
-    .cardslide{
+    .cardslide, .card{
         width: 50%;
+        margin: 4%;
     }
 
     .gridContainer {
@@ -204,31 +253,10 @@ img {
         display: inline-block;
     }
 
-    .navBar {
+    .navItems {
         display: none;
     }
 
 }
 
-/* navigation tab */
 
-.navContainer {
-    position: fixed;
-    top: 0%;
-    background-color: rgba(50, 50, 50, 0.7);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.navLinks {
-    text-align: center;
-    color: white;
-    display: inline-block;
-}
-
-.collapseBar {
-    display: none;
-    padding: 1em;
-    color: aliceblue;
-}
