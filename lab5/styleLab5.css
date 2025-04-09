@@ -1,12 +1,18 @@
-*{box-sizing:border-box;}
-html{scroll-behavior: smooth;}
-.square_circle{
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.square_circle {
     width: 100px;
     height: 100px;
     background-color: purple;
 }
 
-.square_circle:hover{
+.square_circle:hover {
     border-radius: 50%;
     background-color: aqua;
     transition: ease-in-out 800ms;
@@ -22,20 +28,19 @@ img {
     position: relative;
 }
 
-.slidecontainer, .cardslide{
+.slidecontainer, .cardslide {
     width: 500px;
     position: relative;
 }
 
 
-
-.zoomcontent, .slidecontent{
+.zoomcontent, .slidecontent {
     position: absolute;
     top: 0%;
     bottom: 0%;
     left: 0%;
     right: 0%;
-    background-color: rgba(50,50,50,0.7);
+    background-color: rgba(50, 50, 50, 0.7);
     text-align: center;
     padding-top: 30%;
     color: white;
@@ -45,37 +50,185 @@ img {
 }
 
 .zoomcontainer:hover .zoomcontent {
-    transform:scale(1);
+    transform: scale(1);
 }
 
-.slidecontent{
+.slidecontent {
     transform: translateX(500px);
 }
 
-.slidecontainer{
+.slidecontainer {
     overflow: hidden;
 }
 
-.slidecontainer:hover .slidecontent{
+.slidecontainer:hover .slidecontent {
     transform: translateX(0px);
 }
 
-.card, .cardslide{
-    width: 300px;
+.card, .cardslide, .flex {
+    width: 20%;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 2px 2px 5px black;
     transition: ease-in-out 500ms;
-    margin-top: 20px;
+    margin: 3%;
 }
 
-.card:hover{
+/*.card img {*/
+/*    width: 100%;*/
+/*    height: auto; !* Optional: To maintain aspect ratio *!*/
+/*    display: block;*/
+/*}*/
+
+.card:hover {
     transform: scale(0.9);
     box-shadow: none;
 }
 
-.cardslide:hover{
+.cardslide:hover, .flex:hover {
     transform: translateY(-10px) scale(1.1);
     box-shadow: 0px 5px 5px black;
 }
 
+.flexContainer {
+    justify-content: center;
+    background-color: lightsalmon;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: flex-end;
+    align-content: space-between;
+}
+
+.flexContainer section {
+    margin: auto;
+}
+
+/* Grid layout */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 2fr 2fr 5fr;
+    grid-template-rows: 3fr 1fr 4fr;
+    background-color: antiquewhite;
+    height: 500px;
+    gap: 10px;
+}
+
+.item {
+    background-color: aqua;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.gridSection {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+.gridSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* More grid properties*/
+
+.sectionContainer {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+}
+
+.header, .sideBar, .content, .footer {
+    padding: 2em;
+    text-align: center;
+}
+
+.header {
+    background-color: aqua;
+    grid-area: header;
+}
+
+.sideBar {
+    background-color: blueviolet;
+}
+
+.content {
+    background-color: green;
+    grid-area: content;
+}
+
+.footer {
+    background-color: pink;
+    grid-area: footer;
+}
+
+/* Media query */
+
+@media only screen and (max-width: 1150px) {
+    .flexContainer {
+        background-color: aqua;
+    }
+
+    .flexContainer .cardslide{
+        margin: 2%;
+    }
+
+    .cardslide{
+        width: 50%;
+    }
+
+    .gridContainer {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .flexContainer {
+        background-color: purple;
+    }
+    .cardslide {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .gridContainer {
+        grid-template-columns: 3fr;
+    }
+
+    .collapseBar {
+        display: inline-block;
+    }
+
+    .navBar {
+        display: none;
+    }
+
+}
+
+/* navigation tab */
+
+.navContainer {
+    position: fixed;
+    top: 0%;
+    background-color: rgba(50, 50, 50, 0.7);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navLinks {
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+
+.collapseBar {
+    display: none;
+    padding: 1em;
+    color: aliceblue;
+}

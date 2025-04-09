@@ -132,7 +132,7 @@ a {
     border-radius: 5%;
     text-shadow: 2px 2px 5px rgb(119, 101, 93);
     border: 2px solid rgba(255, 254, 206, 0.56);
-    box-shadow: 4px 4px 5px black;
+    box-shadow: 4px 4px 5px rgba(10, 36, 39, 0.62);
     transition: box-shadow 500ms ease-in-out;
 }
 
