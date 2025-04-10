@@ -257,16 +257,16 @@ a {
 }
 
 
-.img3:hover {
-    scale: 1.1;
-    transition: ease-in-out 550ms;
-}
 
 .img3:hover {
     transform: scale(1.1);
-    transition-duration: 1s;
+    transition-duration: 550ms;
     border: 2px solid rgb(0, 106, 113);
-    border-radius: 10px
+    border-radius: 10px;
+}
+
+.img1:hover, .img2:hover, .img3:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 
