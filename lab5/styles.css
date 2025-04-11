@@ -16,6 +16,10 @@ hr {
     left: 20px;
 }
 
+.header {
+    height: auto;
+}
+
 .header_nav {
     display: flex;
     justify-content: center;
