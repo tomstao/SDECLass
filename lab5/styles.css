@@ -50,6 +50,7 @@ hr {
     display: flex;
     justify-content: center;
     position: relative;
+    box-shadow: inset 0 0 15px 0 rgba(18, 52, 88);
 }
 
 
@@ -187,6 +188,13 @@ footer a {
     .header_img-p_intro {
         display: flex;
         height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
     }
 }
 
