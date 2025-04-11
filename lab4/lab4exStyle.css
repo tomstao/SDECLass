@@ -12,7 +12,7 @@
     border: 1px solid rgb(190, 89, 133);
     position: relative;
     overflow: hidden;
-    max-height: 450px;
+    max-height: 600px;
 }
 
 img {
@@ -229,7 +229,7 @@ a {
     position: absolute;
     text-shadow: 2px 2px 5px rgb(1, 85, 81);
     color: rgb(36, 252, 220);
-    font-size: 0.7em;
+    font-size: 0.8em;
     max-width: 90%;
     word-break: break-word;
     text-shadow: 2px 2px 5px rgb(1, 85, 81);
