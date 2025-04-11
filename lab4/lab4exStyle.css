@@ -85,7 +85,7 @@ img {
 }
 
 .img1:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     filter: invert(100%);
     transition-duration: 1s;
     border: 2px solid rgb(0, 106, 113);
@@ -94,7 +94,7 @@ img {
 
 
 .img2:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 1s;
     border-radius: 10px;
     border: 2px solid rgb(255, 208, 199);
@@ -118,7 +118,7 @@ img {
 }
 
 .content2 .button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 a {
@@ -261,7 +261,7 @@ a {
 
 
 .img3:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition-duration: 550ms;
     border: 2px solid rgb(0, 106, 113);
     border-radius: 10px;
