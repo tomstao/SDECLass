@@ -1,0 +1,126 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.icon {
+    margin-top: 0.5%;
+    margin-bottom: auto;
+    height: 70px;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(18, 52, 88);
+    height: 15vh;
+}
+
+.header_h1 {
+    text-align: center;
+}
+
+.header_nav a {
+    color: rgb(241, 239, 236);
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.5em;
+}
+
+.header_nav a:hover {
+    color: rgb(212, 201, 190);
+}
+
+.header_nav a:last-child {
+    margin-right: 0;
+}
+
+.header_h1-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+h1 {
+    display: inline-block;
+}
+
+.header_img-p_intro {
+    height: 40vh;
+    display: flex;
+    margin-top: 3%;
+    text-align: justify;
+    position: relative;
+}
+
+.header_img-p_img {
+    height: 100%;
+    max-width: 40%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+}
+
+.header_img-p_p {
+    max-width: 60%;
+    line-height: 1.4;
+    font-size: 1.1em;
+    color: #333;
+    margin-left: 8%;
+}
+
+/* card section*/
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 20px; /* space between cards */
+    padding: 20px;
+    text-align: center;
+}
+
+.h2-card {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.h2-card h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.card {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Keeps the image nicely cropped */
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px;
+}
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(212, 201, 190, 0.86);
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+}
