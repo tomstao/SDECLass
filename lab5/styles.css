@@ -92,6 +92,10 @@ h1 {
     text-align: center;
 }
 
+.card h3 {
+    font-size: 0.9em;
+}
+
 .h2-card {
     text-align: center;
     margin-top: 5vh;
@@ -114,7 +118,7 @@ h1 {
 .card:hover {
     transform: scale(1.05);
     transition: ease-in-out 0.2s;
-    box-shadow: 0 0px 5px rgb(18, 52, 88);
+    box-shadow: 0 0 5px rgb(18, 52, 88);
 }
 
 .card img {
