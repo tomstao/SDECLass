@@ -146,6 +146,7 @@ footer {
     border-radius: 10px;
     margin-bottom: 1%;
 }
+
 footer p {
     display: flex;
     justify-content: center;
@@ -182,6 +183,7 @@ footer a {
         align-items: center;
         text-align: center;
     }
+
     .header_img-p_p {
         max-width: 47%;
         line-height: 1.4;
@@ -209,7 +211,7 @@ footer a {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 575px) {
     .card-container {
         grid-template-columns: 1fr; /* stack cards vertically */
     }
