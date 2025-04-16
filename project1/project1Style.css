@@ -1,0 +1,12 @@
+
+
+:root {
+    --primary: rgb(34, 90, 227);
+    --primaryLight: rgb(159, 179, 223);
+    --secondary: rgb(255, 241, 213);
+}
+
+.titleBg {
+    background-color: var(--primary) !important;
+    color: var(--secondary) !important;
+}
