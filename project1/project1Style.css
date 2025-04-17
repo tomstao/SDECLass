@@ -10,3 +10,17 @@
     background-color: var(--primary) !important;
     color: var(--secondary) !important;
 }
+
+.hero-image {
+    background-image: url('images/NYC.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;         /* full screen height */
+    background-attachment: scroll;  /* scrolls up with content (this is default) */
+}
+
+.hero-image h1,
+.hero-image p {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}

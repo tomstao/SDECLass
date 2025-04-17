@@ -13,45 +13,86 @@
     <link rel="stylesheet" href="project1Style.css" />
   </head>
   <body>
-    <h1 class="bg-warning titleBg text-center">Welcome to New York City</h1>
-    <nav class="navbar navbar-fexpand-lg bg-light">
-      <div class="container-fluid">
-        <div>
-          <ul>
-            <li>
-              <a href="https://www.nycgo.com/" target="_blank">NYC Go</a>
-            </li>
-            <li>
-              <a href="https://www.nyc.gov/site/home/index.page" target="_blank"
-                >NYC Government</a
-              >
-            </li>
-            <li>
-              <a href="https://www.nyctourism.com/" target="_blank"
-                >NYC Parks</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.cntraveler.com/gallery/best-museums-in-new-york-city"
-                target="_blank"
-                >New York Museums</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<!--    <nav class="navbar navbar-fexpand-lg bg-light position-fixed top-0 end-0 m-3">-->
+<!--      <a class="navbar-brand" href="#">Navbar</a>-->
 
-    <section class="container text-center rounded-3">
-      <h1 class="bg-info text-white h2">New York City Landmarks</h1>
-      <p>
-        New York City, often simply called New York, is the most populous city
-        in the United States. With an estimated 2023 population of 8,468,743
-        distributed over about 302.6 square miles (784 km2), New York is also
-        the most densely populated major city in the United States.
-      </p>
-    </section>
+<!--      <div class="container-fluid">-->
+<!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--          <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+
+<!--        <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+
+<!--        <ul>-->
+<!--            <li>-->
+<!--              <a href="https://www.nycgo.com/" target="_blank">NYC Go</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://www.nyc.gov/site/home/index.page" target="_blank"-->
+<!--                >NYC Government</a-->
+<!--              >-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="https://www.nyctourism.com/" target="_blank"-->
+<!--                >NYC Parks</a-->
+<!--              >-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a-->
+<!--                href="https://www.cntraveler.com/gallery/best-museums-in-new-york-city"-->
+<!--                target="_blank"-->
+<!--                >New York Museums</a-->
+<!--              >-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </nav>-->
+
+    <!-- Toggle Button -->
+<header class="position-fixed top-0 start-0 w-100 bg-info text-white d-flex justify-content-between align-items-center p-3 z-3">
+  <h1 class="h4 m-0 mx-auto">New York City Landmarks</h1>
+
+  <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#rightNavbar" aria-controls="rightNavbar">
+    Navigation
+  </button>
+
+  <!-- Offcanvas Navbar on the Right -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="rightNavbar" aria-labelledby="rightNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="rightNavbarLabel">Navigation</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.nycgo.com/">NYC go</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.cntraveler.com/gallery/best-museums-in-new-york-city">Museum</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<section class="hero-image">
+
+
+  <div class="container position-absolute top-50 start-50 translate-middle text-white text-center">
+    <h1 class="display-3 fw-bold text-center">Welcome to NYC!</h1>
+    <p class="lead text-center">
+      New York City, often simply called New York, is the most populous city
+      in the United States. With an estimated 2023 population of 8,468,743
+      distributed over about 302.6 square miles (784 km2), New York is also
+      the most densely populated major city in the United States.
+    </p>
+
+  </div>
+</section>
+
 
     <section class="container">
       <div class="row">
@@ -100,9 +141,7 @@
       <footer class="bg-light text-center text-lg-start">
         <div class="text-center p-3">
           © 2023 New York City Landmarks:
-          <a class="text-dark" href="https://www.nycgo.com/" target="_blank"
-            >Tao Su</a
-          >
+          Tao Su
         </div>
       </footer>
     </section>
