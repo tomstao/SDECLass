@@ -20,6 +20,10 @@
     background-attachment: scroll;  /* scrolls up with content (this is default) */
 }
 
+.intro{
+    color: rgb(239, 57, 121) !important;
+}
+
 .hero-image h1,
 .hero-image p {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
