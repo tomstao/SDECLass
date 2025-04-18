@@ -1,122 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>New York City Landmarks</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-      crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+            crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="project1Style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="project1Style.css"/>
+</head>
+<body>
 
-    <!-- Toggle Button -->
-<header class="position-fixed top-0 start-0 w-100 bg-info text-white d-flex justify-content-between align-items-center p-3 z-3">
-  <h1 class="h4 m-0 mx-auto">New York City Landmarks</h1>
+<!-- Toggle Button -->
+<header class="position-fixed top-0 start-0 w-100 fixedNav text-white d-flex justify-content-between align-items-center p-3 z-3 shadow">
+    <h1 class="h4 m-0 mx-auto">New York City Landmarks</h1>
 
-  <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#rightNavbar" aria-controls="rightNavbar">
-    Navigation
-  </button>
+    <button class="btn btn-light shadow mx-5 shadow nav-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#rightNavbar"
+            aria-controls="rightNavbar">
+        Navigation
+    </button>
 
-  <!-- Offcanvas Navbar on the Right -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="rightNavbar" aria-labelledby="rightNavbarLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="rightNavbarLabel">Navigation</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <!-- Offcanvas Navbar on the Right -->
+    <div class="offcanvas offcanvas-end nav-canvas" tabindex="-1" id="rightNavbar" aria-labelledby="rightNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="rightNavbarLabel">Navigation</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.nycgo.com/" target="_blank" rel="noreferrer noopenner">NYC go</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="https://www.cntraveler.com/gallery/best-museums-in-new-york-city" target="_blank" rel="noreferrer noopenner">Museum</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="offcanvas-body">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.nycgo.com/">NYC go</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.cntraveler.com/gallery/best-museums-in-new-york-city">Museum</a>
-        </li>
-      </ul>
-    </div>
-  </div>
 </header>
-<section class="hero-image">
+<section class="hero-image mb-1">
 
 
-  <div class="container position-absolute top-50 start-50 translate-middle text-white text-center intro">
-    <div class="hero-overlay text-center">
-    <h1 class="display-3 fw-bold text-center">Welcome to NYC!</h1>
-    <p class="lead text-center fw-bolder">
-      New York City, often simply called New York, is the most populous city
-      in the United States. With an estimated 2023 population of 8,468,743
-      distributed over about 302.6 square miles (784 km2), New York is also
-      the most densely populated major city in the United States.
-    </p>
+    <div class="container position-absolute top-50 start-50 translate-middle text-white text-center intro">
+        <div class="hero-overlay text-center hero-text">
+            <h1 class="display-3 fw-bold text-center">Welcome to NYC!</h1>
+            <p class="lead text-center fw-bolder lh-lg lead">
+                New York City, often simply called New York, is the most populous city
+                in the United States. With an estimated 2023 population of 8,468,743
+                distributed over about 302.6 square miles (784 km2), New York is also
+                the most densely populated major city in the United States.
+            </p>
+        </div>
+
     </div>
-
-  </div>
 </section>
 
 
-    <section class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <h2>Statue of Liberty</h2>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Statue_of_Liberty%2C_New_York_City%2C_USA.jpg/640px-Statue_of_Liberty%2C_New_York_City%2C_USA.jpg"
-            alt="Statue of Liberty"
-            class="img-fluid"
-          />
-          <p>
-            The Statue of Liberty is a colossal neoclassical sculpture on
-            Liberty Island in New York Harbor in New York City, in the United
-            States.
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <h2>Central Park</h2>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Central_Park_Manhattan_New_York_City_%28cropped%29.jpg/640px-Central_Park_Manhattan_New_York_City_%28cropped%29.jpg"
-            alt="Central Park"
-            class="img-fluid"
-          />
-          <p>
-            Central Park is an urban park in New York City located between the
-            Upper West Side and Upper East Side neighborhoods of Manhattan.
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <h2>Empire State Building</h2>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Empire_State_Building%2C_New_York_City_%28cropped%29.jpg/640px-Empire_State_Building%2C_New_York_City_%28cropped%29.jpg"
-            alt="Empire State Building"
-            class="img-fluid"
-          />
-          <p>
-            The Empire State Building is a 102-story Art Deco skyscraper in
-            Midtown Manhattan, New York City, in the state of New York, in the
-            United States.
-          </p>
-        </div>
-      </div>
-    </section>
+<section class="py-5 text-center my-5 v-80 fade-text">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                <h2 class="fw-bold mb-3 h1">Discover the Magic of New York City</h2>
+                </div>
+                
+                <div class="row w-50 mx-auto">
+                    <a class="btn mint-button shadow rounded" href="https://www.nyctourism.com/" target="_blank" rel="noreferrer noopenner">Start your journey</a>
+                </div>
+            </div>
 
-    <section class="container">
-      <footer class="bg-light text-center text-lg-start">
+            <div class="col">
+                <p class="lead">
+                    From world-famous monuments to hidden gems tucked away in vibrant neighborhoods, NYC is a city of
+                    endless possibilities. Whether you're a first-time visitor or a lifelong local, there's always
+                    something new to explore.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<div id="carousel" class="carousel slide fixed-carousel my-5 carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="carousel/empire.jpg" class="d-block w-100" alt="skyscraper">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Empire State Building</h5>
+                <p>Iconic Art Deco skyscraper and city view from the top.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="carousel/hudson.jpg" class="d-block w-100" alt="hudson">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Hudson River</h5>
+                <p>Flowing alongside Manhattan, the Hudson River offers scenic views, peaceful sunsets, and a timeless charm at the edge of the city.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="carousel/manhattan.jpg" class="d-block w-100" alt="manhattan">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Manhattan</h5>
+                <p>A stunning top view of Manhattan—skyscrapers, rivers, and city life all in one unforgettable skyline.</p>
+            </div>
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<section class="w-100 hero-card">
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>Statue of Liberty</h2>
+            <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Statue_of_Liberty%2C_New_York_City%2C_USA.jpg/640px-Statue_of_Liberty%2C_New_York_City%2C_USA.jpg"
+                    alt="Statue of Liberty"
+                    class="img-fluid"
+            />
+            <p>
+                The Statue of Liberty is a colossal neoclassical sculpture on
+                Liberty Island in New York Harbor in New York City, in the United
+                States.
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h2>Central Park</h2>
+            <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Central_Park_Manhattan_New_York_City_%28cropped%29.jpg/640px-Central_Park_Manhattan_New_York_City_%28cropped%29.jpg"
+                    alt="Central Park"
+                    class="img-fluid"
+            />
+            <p>
+                Central Park is an urban park in New York City located between the
+                Upper West Side and Upper East Side neighborhoods of Manhattan.
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h2>Empire State Building</h2>
+            <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Empire_State_Building%2C_New_York_City_%28cropped%29.jpg/640px-Empire_State_Building%2C_New_York_City_%28cropped%29.jpg"
+                    alt="Empire State Building"
+                    class="img-fluid"
+            />
+            <p>
+                The Empire State Building is a 102-story Art Deco skyscraper in
+                Midtown Manhattan, New York City, in the state of New York, in the
+                United States.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="container">
+    <footer class="bg-light text-center text-lg-start rounded shadow">
         <div class="text-center p-3">
-          © 2023 New York City Landmarks:
-          Tao Su
+            © 2023 New York City Landmarks:
+            Tao Su
         </div>
-      </footer>
-    </section>
+    </footer>
+</section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"
+></script>
+</body>
 </html>

@@ -4,11 +4,55 @@
     --primary: rgb(34, 90, 227);
     --primaryLight: rgb(159, 179, 223);
     --secondary: rgb(255, 241, 213);
+    --mint:rgb(0, 106, 113);
+    --lightMint: rgb(72, 166, 167);
+    --lightBack: rgb(242, 239, 231);
+}
+
+body {
+    background-color: var(--lightBack);
+}
+
+.nav-button {
+    background-color: var(--lightBack)!important;
+}
+
+.nav-canvas {
+    background-color: var(--lightBack)!important;
+}
+
+.nav-link {
+    color: var(--mint)!important;
+}
+
+.nav-link:hover {
+    color: var(--lightMint)!important;
 }
 
 .titleBg {
     background-color: var(--primary) !important;
     color: var(--secondary) !important;
+}
+
+.fixedNav {
+    background-color: rgba(0, 106, 113, 0.75) !important;
+}
+
+/*.hero-card {*/
+/*    background-image: url('images/new-york-statue-of-liberty.jpg');*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    height: 100vh;         !* full screen height *!*/
+/*    background-attachment: scroll;  !* scrolls up with content (this is default) *!*/
+/*}*/
+
+.mint-button {
+    background-color: var(--lightMint) !important;
+}
+
+.mint-button:hover {
+    background-color: var(--mint) !important;
 }
 
 .hero-image {
@@ -25,6 +69,39 @@
     color: white;
     padding: 2rem;
     border-radius: 1rem;
+}
+
+.hero-text, .fade-text{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.v-80 {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fixed-carousel,
+.carousel-item
+{
+    height: 75vh;
+    overflow: hidden;
+}
+
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .intro{
