@@ -149,6 +149,10 @@ body {
     transform: scale(1.05);
 }
 
+.guide-text {
+    background-color: var(--lightBack);
+}
+
 .icon:hover {
     cursor: pointer;
 }
