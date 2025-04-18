@@ -6,6 +6,7 @@
     --secondary: rgb(255, 241, 213);
     --mint:rgb(0, 106, 113);
     --lightMint: rgb(72, 166, 167);
+    --shallowMint: rgba(154, 203, 208, 0.39);
     --lightBack: rgb(242, 239, 231);
 }
 
@@ -112,4 +113,8 @@ body {
 .hero-image h1,
 .hero-image p {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+footer {
+    background-color: var(--shallowMint);
 }
