@@ -12,6 +12,7 @@
 
 body {
     background-color: var(--lightBack);
+    font-family: 'Inter', sans-serif;
 }
 
 .nav-button {
