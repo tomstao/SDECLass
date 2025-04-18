@@ -1,34 +1,50 @@
 
-
 :root {
     --primary: rgb(34, 90, 227);
     --primaryLight: rgb(159, 179, 223);
     --secondary: rgb(255, 241, 213);
-    --mint:rgb(0, 106, 113);
+    --mint: rgb(0, 106, 113);
     --lightMint: rgb(72, 166, 167);
     --shallowMint: rgba(154, 203, 208, 0.39);
     --lightBack: rgb(242, 239, 231);
 }
+
+
+/*@media (max-width: 768px) {*/
+/*    .carousel-caption {*/
+/*        bottom: 5%;*/
+/*        font-size: 0.9rem;*/
+/*        padding: 0 1rem;*/
+/*    }*/
+
+/*    .carousel-caption h5 {*/
+/*        font-size: 1.1rem;*/
+/*    }*/
+/*}*/
 
 body {
     background-color: var(--lightBack);
     font-family: 'Inter', sans-serif;
 }
 
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
 .nav-button {
-    background-color: var(--lightBack)!important;
+    background-color: var(--lightBack) !important;
 }
 
 .nav-canvas {
-    background-color: var(--lightBack)!important;
+    background-color: var(--lightBack) !important;
 }
 
 .nav-link {
-    color: var(--mint)!important;
+    color: var(--mint) !important;
 }
 
 .nav-link:hover {
-    color: var(--lightMint)!important;
+    color: var(--lightMint) !important;
 }
 
 .titleBg {
@@ -62,8 +78,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;         /* full screen height */
-    background-attachment: scroll;  /* scrolls up with content (this is default) */
+    height: 100vh; /* full screen height */
+    background-attachment: scroll; /* scrolls up with content (this is default) */
 }
 
 .hero-overlay {
@@ -73,7 +89,7 @@ body {
     border-radius: 1rem;
 }
 
-.hero-text, .fade-text{
+.hero-text, .fade-text {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeUp 1.5s ease-out forwards;
@@ -94,10 +110,19 @@ body {
 }
 
 .fixed-carousel,
-.carousel-item
-{
+.carousel-item {
     height: 75vh;
     overflow: hidden;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3); /* dimming layer */
+    z-index: 1;
 }
 
 
@@ -107,13 +132,30 @@ body {
 }
 
 
-.intro{
+.intro {
     color: rgb(239, 57, 121) !important;
 }
 
 .hero-image h1,
 .hero-image p {
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.guide, .icon {
+    transition: transform 0.2s ease-in-out;
+}
+
+.guide:hover, .icon:hover {
+    transform: scale(1.05);
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.icon {
+    width: auto!important;
+    height: 50px!important;
 }
 
 footer {
