@@ -20,6 +20,13 @@
     background-attachment: scroll;  /* scrolls up with content (this is default) */
 }
 
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.11); /* black with 50% opacity */
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 .intro{
     color: rgb(239, 57, 121) !important;
 }
