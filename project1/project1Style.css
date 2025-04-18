@@ -9,6 +9,9 @@
     --lightBack: rgb(242, 239, 231);
 }
 
+.titleH1 {
+    color: var(--lightBack)!important;
+}
 
 /*@media (max-width: 768px) {*/
 /*    .carousel-caption {*/
