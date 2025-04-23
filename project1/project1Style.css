@@ -173,3 +173,8 @@ footer {
     height: 250px; /* or any fixed height you want */
     object-fit: cover;
 }
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
