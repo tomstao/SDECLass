@@ -1,0 +1,78 @@
+:root {
+    --primary: rgb(34, 90, 227);
+    --primaryLight: rgb(159, 179, 223);
+    --secondary: rgb(255, 241, 213);
+    --mint: rgb(0, 106, 113);
+    --lightMint: rgb(72, 166, 167);
+    --shallowMint: rgba(154, 203, 208, 0.39);
+    --lightBack: rgb(242, 239, 231);
+}
+
+
+.titleH1 {
+    color: var(--lightBack)!important;
+}
+
+body {
+    padding-top: 1vh;
+    background-color: var(--lightBack);
+    font-family: 'Inter', sans-serif;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.nav-button {
+    background-color: var(--lightBack) !important;
+}
+
+.nav-canvas {
+    background-color: var(--lightBack) !important;
+}
+
+.nav-link {
+    color: var(--mint) !important;
+}
+
+.nav-link:hover {
+    color: var(--lightMint) !important;
+}
+
+.titleBg {
+    background-color: var(--primary) !important;
+    color: var(--secondary) !important;
+}
+
+.fixedNav {
+    background-color: rgba(0, 106, 113, 0.75) !important;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+/* Standardize card image height */
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.icon {
+    width: auto!important;
+    height: 50px!important;
+}
+
+.card-body {
+    background-color: var(--lightBack) !important;
+}
+
+.img-card {
+    margin-bottom: 10vh;
+}

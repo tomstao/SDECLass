@@ -10,6 +10,8 @@
             integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
             crossorigin="anonymous"
     />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="project1Style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -49,6 +51,8 @@
         </div>
     </div>
 </header>
+
+
 <section class="hero-image mb-1">
 
 
@@ -71,7 +75,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="row">
+                <div class="row" data-aos="flip-left">
                     <h2 class="fw-bold mb-3 h1">Discover the Magic of New York City</h2>
                 </div>
 
@@ -81,7 +85,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col" data-aos="flip-right">
                 <p class="lead">
                     From world-famous monuments to hidden gems tucked away in vibrant neighborhoods, NYC is a city of
                     endless possibilities. Whether you're a first-time visitor or a lifelong local, there's always
@@ -138,7 +142,7 @@
     <div class="container">
 
         <!-- Statue of Liberty -->
-        <div class="row mb-5" style="min-height: 75vh;">
+        <div class="row mb-5" style="min-height: 75vh;" data-aos="fade-right">
             <div class="col-md-5 d-flex align-items-center justify-content-center text-center p-5">
                 <div>
                     <h2>Statue of Liberty</h2>
@@ -162,7 +166,7 @@
 
 
         <!-- Central Park -->
-        <div class="row mb-5 flex-row-reverse" style="min-height: 75vh;">
+        <div class="row mb-5 flex-row-reverse" style="min-height: 75vh;" data-aos="fade-left">
             <div class="col-md-5 d-flex align-items-center justify-content-center text-center p-5">
                 <div>
                     <h2>Central Park</h2>
@@ -185,7 +189,7 @@
 
 
         <!-- Empire State Building -->
-        <div class="row mb-5" style="min-height: 75vh;">
+        <div class="row mb-5" style="min-height: 75vh;" data-aos="fade-right">
             <div class="col-md-5 d-flex align-items-center justify-content-center text-center p-5">
                 <div>
                     <h2>Empire State Building</h2>
@@ -211,13 +215,12 @@
 <hr class="featurette-divider my-5 d-md-none">
 
 
-<section class="container my-5">
+<section class="container my-5" data-aos="fade-top">
     <div class="row text-center">
         <h2 class="mb-4">Practical Tips for Exploring the City</h2>
 
-        <!-- Traffic Guide -->
-        <div class="col-md-6 mb-4 guide">
-            <a href="traffic.html" target="_blank" rel="noreferrer noopenner" class="text-decoration-none">
+        <div class="col-md-6 mb-4 guide" data-aos="fade-left">
+            <a href="discover.html" target="_blank" rel="noreferrer noopenner" class="text-decoration-none">
                 <div class="card shadow h-100 hover-shadow">
                     <img src="card/centralStation_horizontal.jpg" class="card-img-top h-70" alt="Traffic in NYC">
                     <div class="card-body guide-text">
@@ -228,9 +231,8 @@
             </a>
         </div>
 
-        <!-- Food Guide -->
-        <div class="col-md-6 mb-4 guide">
-            <a href="food.html" target="_blank" rel="noreferrer noopenner" class="text-decoration-none">
+        <div class="col-md-6 mb-4 guide" data-aos="fade-right">
+            <a href="gem.html" target="_blank" rel="noreferrer noopenner" class="text-decoration-none">
                 <div class="card shadow h-100 hover-shadow">
                     <img src="images/After-Hours-sunset.jpg" class="card-img-top h-70" alt="NYC Food">
                     <div class="card-body guide-text">
@@ -243,7 +245,7 @@
     </div>
 </section>
 
-<section class="container">
+<section class="container" data-aos="fade-top">
 
     <footer class="text-center text-lg-start rounded shadow-lg">
         <section class="container p-4">
@@ -278,6 +280,12 @@
     </section>
     </footer>
 </section>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"

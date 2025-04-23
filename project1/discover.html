@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous NYC Landmarks</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+            crossorigin="anonymous"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="subStyle.css">
+</head>
+<body>
+<header class="position-fixed top-0 start-0 w-100 fixedNav text-white d-flex justify-content-between align-items-center p-3 z-3 shadow">
+    <h1 class="h4 m-0 mx-auto titleH1">New York City Landmarks Guide Page</h1>
+
+    <button class="btn btn-light shadow mx-5 shadow nav-button" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#rightNavbar"
+            aria-controls="rightNavbar">
+        Navigation
+    </button>
+
+    <!-- Offcanvas Navbar on the Right -->
+    <div class="offcanvas offcanvas-end nav-canvas" tabindex="-1" id="rightNavbar" aria-labelledby="rightNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="rightNavbarLabel">Navigation</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="project1.html">Main page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="gem.html">Hidden gems</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="container my-5 pt-5 mt-5" style="padding-top: 100px">
+    <h1 class="text-center mb-4">Famous Landmarks</h1>
+    <p class="text-center mb-5">From the towering Empire State Building to the majestic Statue of Liberty, explore NYC’s
+        most legendary landmarks.</p>
+    <hr class="featurette-divider my-5">
+
+    <div class="row g-4">
+        <!-- Statue of Liberty -->
+        <div class="col-lg-6 img-card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
+            <div class="card h-100 shadow">
+                <img src="discoverImg/statue.jpg" class="card-img-top" alt="Statue of Liberty">
+                <div class="card-body">
+                    <h5 class="card-title">Statue of Liberty</h5>
+                    <p class="card-text">A gift from France in 1886, the Statue of Liberty stands as a universal symbol
+                        of freedom and democracy. Located on Liberty Island, it has welcomed generations of immigrants
+                        to the United States.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empire State Building -->
+        <div class="col-lg-6 img-card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
+            <div class="card h-100 shadow">
+                <img src="discoverImg/empire.jpg" class="card-img-top" alt="Empire State Building">
+                <div class="card-body">
+                    <h5 class="card-title">Empire State Building</h5>
+                    <p class="card-text">Once the tallest building in the world, the Empire State Building is an Art
+                        Deco masterpiece offering panoramic views of New York City from its observation decks on the
+                        86th and 102nd floors.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brooklyn Bridge -->
+        <div class="col-lg-6 img-card" data-aos="fade-right">
+            <div class="card h-100 shadow">
+                <img src="discoverImg/bridge.jpg" class="card-img-top" alt="Brooklyn Bridge">
+                <div class="card-body">
+                    <h5 class="card-title">Brooklyn Bridge</h5>
+                    <p class="card-text">Completed in 1883, the Brooklyn Bridge is a marvel of 19th-century engineering.
+                        Its iconic suspension design connects Manhattan and Brooklyn, offering scenic views to
+                        pedestrians and cyclists.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The met -->
+        <div class="col-lg-6 img-card" data-aos="fade-left">
+            <div class="card h-100 shadow">
+                <img src="discoverImg/timesquare.jpg" class="card-img-top" alt="Times Square">
+                <div class="card-body">
+                    <h5 class="card-title">Times Square</h5>
+                    <p class="card-text">Known as “The Crossroads of the World,” Times Square dazzles with neon lights,
+                        digital billboards, Broadway theaters, and buzzing energy — a true heart of New York’s
+                        entertainment scene.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 img-card" data-aos="fade-right">
+            <div class="card h-100 shadow">
+                <img src="discoverImg/met.jpg" class="card-img-top" alt="Times Square">
+                <div class="card-body">
+                    <h5 class="card-title">The Metropolitan Museum of Art (The Met)</h5>
+                    <p class="card-text">One of the world’s largest and most prestigious art museums, The Met houses over two million works from ancient times to modern masterpieces. Located on Fifth Avenue, it’s a must-visit for art and history lovers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 img-card" data-aos="fade-left">
+            <div class="card h-100 shadow">
+                <img src="discoverImg/park.jpg" class="card-img-top" alt="Times Square">
+                <div class="card-body">
+                    <h5 class="card-title">Central Park</h5>
+                    <p class="card-text">Stretching over 840 acres in the heart of Manhattan, Central Park is a green oasis amid the city’s hustle. With winding paths, scenic lakes, open lawns, and landmarks like Bethesda Terrace and Strawberry Fields, it’s the perfect escape for relaxation, recreation, and iconic New York views.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="featurette-divider my-5">
+
+<section class="container">
+
+    <footer class="text-center text-lg-start rounded shadow-lg" id="contact">
+        <section class="container p-4">
+
+            <div class="col-lg-10 map-section py-5 rounded mx-auto">
+                <div class="container text-center justify-content-center">
+                    <h2 class="mb-4">Explore New York City</h2>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1O2AoeBnbezLTGa20AOuoLij16Rg9JDk&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 mx-auto">
+                <div class="container pt-3">
+                    <div class="row justify-content-center">
+                        <img src="icons/instagram.png" alt="instagram logo" class="icon">
+                        <img src="icons/facebook.png" alt="facebook logo" class="icon">
+                        <img src="icons/twitter.png" alt="twitter logo" class="icon">
+                        <img src="icons/linkedin.png" alt="linkedIn logo" class="icon">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="text-center p-3 row">
+                <div class="container text-center">
+                    © 2023 New York City Landmarks:
+                    Tao Su
+                </div>
+            </div>
+        </section>
+    </footer>
+</section>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"
+></script>
+</body>
+</html>
