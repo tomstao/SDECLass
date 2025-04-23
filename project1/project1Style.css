@@ -168,3 +168,8 @@ body {
 footer {
     background-color: var(--shallowMint);
 }
+
+.card-img-top {
+    height: 250px; /* or any fixed height you want */
+    object-fit: cover;
+}
