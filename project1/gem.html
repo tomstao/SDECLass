@@ -3,32 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYC Hidden Gems</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .card-img-top {
-            height: 250px;
-            object-fit: cover;
-        }
-    </style>
+    <title>Hidden Gems</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+            crossorigin="anonymous"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="subStyle.css">
 </head>
 <body>
-<div class="container my-5">
-    <h1 class="text-center mb-4">Hidden Gems</h1>
-    <p class="text-center mb-5">Step off the beaten path and uncover the hidden corners of the city—unique parks, alleyways, and secret spots await.</p>
+<header class="position-fixed top-0 start-0 w-100 fixedNav text-white d-flex justify-content-between align-items-center p-3 z-3 shadow">
+    <h1 class="h4 m-0 mx-auto titleH1">Discover the Secret Side of NYC</h1>
+
+    <button class="btn btn-light shadow mx-5 shadow nav-button" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#rightNavbar"
+            aria-controls="rightNavbar">
+        Navigation
+    </button>
+
+    <!-- Offcanvas Navbar on the Right -->
+    <div class="offcanvas offcanvas-end nav-canvas" tabindex="-1" id="rightNavbar" aria-labelledby="rightNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="rightNavbarLabel">Navigation</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="project1.html">Main page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="discoverImg">Discover NYC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="container my-5 pt-5 mt-5" style="padding-top: 100px">
+    <h1 class="text-center mb-4">Off the Beaten Path: Hidden NYC Landmarks</h1>
+    <p class="text-center mb-5">Step beyond the tourist trail and uncover the city’s secret landmarks full of charm, history, and wonder.
+    </p>
+    <hr class="featurette-divider my-5">
+
     <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
+        <!-- Statue of Liberty -->
+        <div class="col-lg-6 img-card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
             <div class="card h-100 shadow">
-                <img src="images/highline.jpg" class="card-img-top" alt="The High Line">
+                <img src="gems/Ruin+Exterior+-+med.jpg" class="card-img-top" alt="Statue of Liberty">
                 <div class="card-body">
-                    <h5 class="card-title">The High Line</h5>
-                    <p class="card-text">An elevated park built on a historic freight rail line, offering greenery and art in the middle of Manhattan.</p>
+                    <h5 class="card-title">Roosevelt Island Smallpox Hospital (Renwick Ruin)</h5>
+                    <p class="card-text">Hidden in plain sight on Roosevelt Island, this gothic ruin tells tales of a forgotten medical history. Built in the 1850s, it once served smallpox patients in isolation. Now overgrown and hauntingly beautiful, it’s a relic of early NYC healthcare tucked between Manhattan’s glitz and Queens’ quiet.</p>
                 </div>
             </div>
         </div>
-        <!-- Add more gem cards here -->
+
+        <!-- Empire State Building -->
+        <div class="col-lg-6 img-card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
+            <div class="card h-100 shadow">
+                <img src="gems/City_Hall_Station_(32200).jpg" class="card-img-top" alt="Empire State Building">
+                <div class="card-body">
+                    <h5 class="card-title">City Hall Station (Abandoned Subway Station)</h5>
+                    <p class="card-text">Beneath the busy streets of Manhattan lies an architectural time capsule. This now-abandoned subway station opened in 1904 and dazzles with chandeliers, curved glass tiles, and Romanesque arches. Though closed to passengers in 1945, you can still glimpse it on the 6 train loop — a true underground gem.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brooklyn Bridge -->
+        <div class="col-lg-6 img-card" data-aos="fade-right">
+            <div class="card h-100 shadow">
+                <img src="gems/0226_The-Elevated-Acre-at-55-Water-Street_Peter-Mauss-ESTO_N67_medium.jpg" class="card-img-top" alt="Brooklyn Bridge">
+                <div class="card-body">
+                    <h5 class="card-title">The Elevated Acre</h5>
+                    <p class="card-text">Tucked between skyscrapers in the Financial District, this hidden rooftop park feels like a secret garden in the sky. With a sprawling lawn, panoramic East River views, and modern art installations, the Elevated Acre is the perfect spot to escape the city without ever leaving it.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The met -->
+        <div class="col-lg-6 img-card" data-aos="fade-left">
+            <div class="card h-100 shadow">
+                <img src="gems/NYLMC-_5050_GREENWOOD-CEMETERY-41_photo-by-Noel-Sutherland.jpg" class="card-img-top" alt="Times Square">
+                <div class="card-body">
+                    <h5 class="card-title">Green-Wood Cemetery</h5>
+                    <p class="card-text">Far more than a burial ground, Green-Wood is a serene blend of history, art, and nature in Brooklyn. With rolling hills, historic mausoleums, and the graves of Civil War generals and artists, this National Historic Landmark feels like a peaceful outdoor museum — and offers one of the best skyline views in the city.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 img-card" data-aos="fade-right">
+            <div class="card h-100 shadow">
+                <img src="gems/Pomander_Walk.jpg" class="card-img-top" alt="Times Square">
+                <div class="card-body">
+                    <h5 class="card-title">Pomander Walk</h5>
+                    <p class="card-text">Hidden behind nondescript gates on the Upper West Side, Pomander Walk is a private street of quaint, colorful Tudor-style homes. Built in 1921, it feels like stepping into a storybook village — a charming and surreal pocket of whimsy among Manhattan’s concrete jungle.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 img-card" data-aos="fade-left">
+            <div class="card h-100 shadow">
+                <img src="gems/mmuseum_1&2-3.jpg" class="card-img-top" alt="Times Square">
+                <div class="card-body">
+                    <h5 class="card-title">Mmuseumm</h5>
+                    <p class="card-text">Nestled inside a freight elevator shaft in a Tribeca alley, Mmuseumm is NYC’s tiniest museum with the biggest curiosity. Exhibiting oddities like toothpaste tubes from around the world or failed consumer products, it celebrates the beauty of everyday life in the most unexpected way.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<hr class="featurette-divider my-5">
+
+<section class="container">
+
+    <footer class="text-center text-lg-start rounded shadow-lg" id="contact">
+        <section class="container p-4">
+
+            <div class="col-lg-10 map-section py-5 rounded mx-auto">
+                <div class="container text-center justify-content-center">
+                    <h2 class="mb-4">Explore New York City</h2>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1O2AoeBnbezLTGa20AOuoLij16Rg9JDk&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 mx-auto">
+                <div class="container pt-3">
+                    <div class="row justify-content-center">
+                        <img src="icons/instagram.png" alt="instagram logo" class="icon">
+                        <img src="icons/facebook.png" alt="facebook logo" class="icon">
+                        <img src="icons/twitter.png" alt="twitter logo" class="icon">
+                        <img src="icons/linkedin.png" alt="linkedIn logo" class="icon">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="text-center p-3 row">
+                <div class="container text-center">
+                    © 2023 New York City Landmarks:
+                    Tao Su
+                </div>
+            </div>
+        </section>
+    </footer>
+</section>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"
+></script>
 </body>
 </html>
