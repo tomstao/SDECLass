@@ -10,7 +10,7 @@
 }
 
 .titleH1 {
-    color: var(--lightBack)!important;
+    color: var(--lightBack) !important;
 }
 
 /*@media (max-width: 768px) {*/
@@ -161,8 +161,8 @@ body {
 }
 
 .icon {
-    width: auto!important;
-    height: 50px!important;
+    width: auto !important;
+    height: 50px !important;
 }
 
 footer {
