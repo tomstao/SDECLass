@@ -76,3 +76,7 @@ body {
 .img-card {
     margin-bottom: 10vh;
 }
+
+.invisible {
+    visibility: hidden;
+}

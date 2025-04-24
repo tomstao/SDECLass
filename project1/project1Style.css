@@ -178,3 +178,7 @@ footer {
     transform: scale(1.05);
     transition: 0.2s ease-in-out;
 }
+
+.invisible {
+    visibility: hidden;
+}
