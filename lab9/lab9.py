@@ -2,8 +2,6 @@
 Tao Su
 April 24, conditional statement
 """
-from lab8.lab8 import userName
-
 print(f"\n------------ example 1 and 2: if statement ------------")
 
 age = 20
@@ -89,4 +87,19 @@ match response_code:
         print(f"Invalid code")
 
 print(f"\n------------ Lab exercise ------------")
+grade1 = float(input("Enter a grade: "))
+grade2 = float(input("Enter a grade: "))
 
+average = (grade1 + grade2) / 2
+GPA = ""
+if average >= 90:
+    GPA = "A"
+elif average >= 70:
+    GPA = "B"
+elif average >= 60:
+    GPA = "C"
+elif average >= 0:
+    GPA = "Fail"
+else:
+    GPA = "UNDEFINED"
+print(f"Your GPA is {GPA} and the average is {average:.2f}!")
