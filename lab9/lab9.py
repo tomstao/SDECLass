@@ -87,8 +87,8 @@ match response_code:
         print(f"Invalid code")
 
 print(f"\n------------ Lab exercise ------------")
-grade1 = float(input("Enter a grade: "))
-grade2 = float(input("Enter a grade: "))
+grade1 = float(input("Enter a grade1: "))
+grade2 = float(input("Enter a grade2: "))
 
 average = (grade1 + grade2) / 2
 GPA = ""
