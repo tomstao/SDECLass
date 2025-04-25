@@ -102,4 +102,4 @@ elif average >= 0:
     GPA = "Fail"
 else:
     GPA = "UNDEFINED"
-print(f"Your GPA is {GPA} and the average is {average:.2f}!")
+print(f"Your GPA is {GPA}!")
