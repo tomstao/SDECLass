@@ -3,7 +3,6 @@
 Tao Su
 April 25, loops
 """
-from operator import index
 
 print("\n ----------- example 1: for loop as a counter ------------")
 
