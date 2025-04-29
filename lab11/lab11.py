@@ -3,7 +3,7 @@ Tao Su
 April 27, Python applications
 """
 # importing all function from another file
-from lab11.lab11_function import *
+from lab11_function import *
 
 print("\n--------------- Example 1: Pythong dictionary--------------")
 
@@ -98,3 +98,65 @@ print(sumall)
 
 sumall = summ_numbers(3)
 print(sumall)
+
+print("\n ------------------ Example 9: built-in function---------------")
+r = 2
+area = area_circle(r)
+# print(area)
+area_print(area, r)
+
+print("\n ------------------ Example 10: exception ---------------")
+ration = ration_hour(0)
+print(ration)
+
+try:
+    ration = ration_hour(0)
+except ZeroDivisionError:
+    print("Division by zero")
+
+r1 = ration_hour(0)
+r2 = ration_hour(3)
+r3 = ration_hour("peter")
+print(r1, r2, r3)
+
+print("\n ------------------ Example 11: class ---------------")
+# instantiate an instance of the class
+x = Myclass()
+print(f"Instance of the class {x}")
+# call the class's property
+use_id = x.customer_id
+print(f"Customer ID: {use_id}")
+# user message
+print(x.f())
+
+print("\n ------------------ Example 12: instantiation of classes ---------------")
+# creat an instance of the class
+pairComplexNumber = ComplexNumber(2, 3)
+# call the instantiated object of the class
+real = pairComplexNumber.real
+imag = pairComplexNumber.imag
+print(f"The real and imaginary consists of {real} and {imag}")
+
+print("\n ------------------ Example 13: classes application ---------------")
+# create an instance of the class
+car1 = Car("Tesla", "S", 2023)
+# call the property 'odometer_reading'
+car_reading = car1.odometer_reading
+print(f"Car miles reading is {car_reading}")
+# call method 'get_car_description'
+print(car1.get_car_description())
+# call method 'read_odometer'
+print(car1.read_odometer())
+# update the mileage to 10
+car1.update_odometer(10)
+print(car1.read_odometer())
+car1.update_odometer(10)
+print(car1.read_odometer())
+
+# add 20 miles to the odometer
+car1.increment_odometer(20)
+print(car1.read_odometer())
+car1.increment_odometer(-5)
+print(car1.read_odometer())
+car1.increment_odometer(8)
+print(car1.read_odometer())
