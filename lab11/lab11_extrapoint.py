@@ -1,3 +1,8 @@
+"""
+Tao Su
+April 29
+"""
+
 class Student:
     grade = {
         "Math" : 0.0,
