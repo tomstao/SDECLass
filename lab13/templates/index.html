@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask App</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- language: html+jinja -->
+</head>
+<body>
+    <h1 class="title">Welcome to Flask! {{userName}}</h1>
+    <figure class="introImgContainer">
+    <img src="../static/woods.jpg" alt="Woods" class="introImg">
+    </figure>
+
+    <section class="main-container">
+        <ul>source virtual/bin/activate
+        {% for each_fruit in listFruits %}
+        <li> {{each_fruit}}</li>
+        {% endfor %}
+        </ul>
+
+        {% if fruit in listFruits %}
+        <p>Great! We have {{checkFruit}} today!</p>
+        {% else %}
+        <p>{{checkFruit}} is not in the list!</p>
+        {% endif %}
+    </section>
+</body>
+</html>
