@@ -2,7 +2,7 @@
 Tao Su
 lab13, Flask application
 """
-from flask import Flask
+from flask import Flask, render_template, redirect, url_for
 
 """
 create  an object 'app' from the Flask module.
@@ -19,17 +19,23 @@ Set the routing to the main page
 # "route" decorator is used to access the roo URL
 @app.route('/')
 def index():
-    return "Welcome to Flask!"
+    name = "taosu"
+    check_fruit = "kiwi"
+    fruits = ["apple", "pear", "orange", "banana"]
+    return render_template('index.html', userName = name, listFruits = fruits, checkFruit = check_fruit)
 
 
 @app.route('/about')
 def about():
-    return '<h1>About</h1>'
+    return render_template('about.html')
 
+@app.route('/users')
+def users():
+    return render_template('users.html')
 
 @app.route('/quotes')
 def quotes():
-    return '<h1>Quotes</h1>'
+    return redirect(url_for('index'))
 
 
 # set the 'app' to run if you execute the file directly(not when it is imported)
