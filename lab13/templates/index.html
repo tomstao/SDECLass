@@ -8,28 +8,34 @@
     <!-- language: html+jinja -->
 </head>
 <body>
-    <h1 class="title">Welcome to Flask! {{userName}}</h1>
-    <figure class="introImgContainer">
+<h1 class="title">Welcome to Flask! {{userName}}</h1>
+<figure class="introImgContainer">
     <img src="../static/woods.jpg" alt="Woods" class="introImg">
-    </figure>
+</figure>
 
-    <section class="main-container">
-        <ul>source virtual/bin/activate
+<section class="main-container">
+    <ul>source virtual/bin/activate
         {% for each_fruit in listFruits %}
         <li> {{each_fruit}}</li>
         {% endfor %}
-        </ul>
+    </ul>
 
-        {% if fruit in listFruits %}
-        <p>Great! We have {{checkFruit}} today!</p>
-        {% else %}
-        <p>{{checkFruit}} is not in the list!</p>
-        {% endif %}
-        <h2>HTTP request</h2>
-        <form method="post">
-            <input type="password" name="password"></input>
-            <input type="submit"></input>
-        </form>
-    </section>
+    {% if fruit in listFruits %}
+    <p>Great! We have {{checkFruit}} today!</p>
+    {% else %}
+    <p>{{checkFruit}} is not in the list!</p>
+    {% endif %}
+    <h2>HTTP request</h2>
+    <form method="post">
+        <input type="password" name="password"></input>
+        <input type="submit"></input>
+    </form>
+
+
+    {% if 'employee1' in session %}
+    <p>The new employee is {{ session['employee1'] }}</p>
+    {% endif %}
+
+</section>
 </body>
 </html>

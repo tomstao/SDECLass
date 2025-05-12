@@ -1,7 +1,36 @@
+{% extends 'base.html' %}
 
-    {% extends 'base.html' %}
-    {%block title%} Users {%endblock%}
-    {%block msg%}user cyber page{%endblock%}
-    {% block content %}
-        <h2>User list</h2>
-    {%endblock%}
+{% block title %}Users{% endblock %}
+
+{% block msg %}User cyber page{% endblock %}
+
+{% block content %}
+
+<!-- Flash messages section -->
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class="informessage">
+      {% for m in messages %}
+        <li>{{ m }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+<h2>Users in the list</h2>
+
+<form method="POST">
+    <label for="name">Employee name:</label>
+    <input type="text" id="name" name="employee_name" placeholder="Enter employee name">
+
+    <label for="userid">Enter employee ID:</label>
+    <input type="text" id="userid" name="employee_id" placeholder="Enter employee ID">
+
+    <button type="submit">Add new employee</button>
+
+</form>
+ {% if 'employee1' in session%}
+    <p>New Employee is: {{ employee1 }}</p>
+    {% endif %}
+
+{% endblock %}

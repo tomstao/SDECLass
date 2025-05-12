@@ -2,7 +2,7 @@
 Tao Su
 lab13, Flask application
 """
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request, flash, session
 from flask_sqlalchemy import SQLAlchemy
 
 """
@@ -26,11 +26,20 @@ db = SQLAlchemy(app)
 
 
 # the class name is going to be the table name
+# Create a secret key to handle data within our server
+
+import os
+
+app.config['SECRET_KEY'] = os.urandom(24)
+
 class UserLogin(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=True, nullable=False)
 
-
+class Employee(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    employee_id = db.Column(db.String(20), unique=True, nullable=False)
+    employee_name = db.Column(db.String(100), nullable=False)
 """
 Set the routing to the main page
 """
@@ -53,8 +62,34 @@ def index():
 def about():
     return render_template('about.html')
 
-@app.route('/users')
+@app.route('/users', methods=['GET', 'POST'])
 def users():
+    if request.method == 'POST':
+        try:
+            form = request.form
+            emp_name = form['employee_name']
+            emp_id = form['employee_id']
+
+            # check if employess already exists by name (or use employee if that's unique)
+            existing_employee = Employee.query.filter_by(employee_id = emp_id).first()
+
+            if existing_employee:
+                flash(f'Employee ID {emp_id} already exists for {existing_employee.employee_name}')
+            # Create a new employee with name '{emp_name}' and add data into the database
+            new_employee = Employee(employee_name = emp_name, employee_id = emp_id)
+
+            # store first employee name in session
+            session['employee1'] = new_employee.employee_name
+
+            # add the new object to our database
+            db.session.add(new_employee)
+            db.session.commit()
+
+            # message using flash
+            flash(f'{request.form["employee_name"]} is successfully registered!')
+        except:
+            flash('Failed to register employee!')
+
     return render_template('users.html')
 
 @app.route('/quotes')
